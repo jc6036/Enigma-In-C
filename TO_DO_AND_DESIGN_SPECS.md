@@ -18,14 +18,13 @@ The output system will simply display the converted letter during the proof-of-c
 
 ## TO-DO
 
-* Work on the proof of concept, getting a baseline functionality working.
-   * Create an input system that will take one letter of user input and store it in a variable
-   * Create a system with a static wheel, one middle wheel, and a reflector. Their       configuration will be hardcoded into the program for the prototype.
-   * Allow for the system to output the newly encoded letter.
-   * Translate a few letters on paper to compare to test runs of the prototype.
-* Plan on how the file setup of the program will be. Individual classes per file and main.cpp as the backbone in a single file. 
-* Create a basic Makefile
-   * Include make Clean option (This will remove all compiled objects)
-   * Include make All option (This will re-compile all files instead of changed ones)
-   * Include make option (This is the basic compile option, will compile anything that has been changed and if something doesn't exist, will compile it.)
+- [] Work on the proof of concept, getting a baseline functionality working.
+   - [x] Create an input system that will take one letter of user input and store it in a variable
+   - [] Create a system with a static wheel, one middle wheel, and a reflector. Their       configuration will be hardcoded into the program for the prototype.
+   - [] Allow for the system to output the newly encoded letter.
+   - [] Translate a few letters on paper to compare to test runs of the prototype.
+- [x] Plan on how the file setup of the program will be. Individual classes per file and main.cpp as the backbone in a single file. 
+- [x] Create a basic Makefile
+   - [x] Include make Clean option (This will remove all compiled objects)
+   - [x] Include make All option (This will re-compile all files instead of changed ones)
 
