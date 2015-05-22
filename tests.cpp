@@ -1,6 +1,8 @@
 #include <iostream>
+#include <map>
 #include "tests.h"
 #include "input.h"
+#include "enigma.h"
 
 using namespace std;
 
