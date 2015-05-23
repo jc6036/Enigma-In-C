@@ -21,7 +21,26 @@ char encrypt_single_character (char input, int first_wheel_setting = 1) {
     letter_wheel[25]='y'; letter_wheel[26]='z'; // This populates the letter-wheel map.
 
     map<int, int> wheel_one; // Basic wheel setup; after POC this will be far more complex.
-    // TO-DO: Fill out the statements to populate this map. Done for the day.
+    wheel_one[0]=1; // Key 0 will contain the current setting for the wheel.
+    wheel_one[1]=2; wheel_one[2]=3; wheel_one[3]=4; wheel_one[4]=5; wheel_one[5]=6; 
+    wheel_one[6]=7; wheel_one[7]=8; wheel_one[8]=9; wheel_one[9]=10; wheel_one[10]=11;
+    wheel_one[11]=12; wheel_one[12]=13; wheel_one[13]=14; wheel_one[14]=15; wheel_one[15]=16;
+    wheel_one[16]=17; wheel_one[17]=18; wheel_one[18]=19; wheel_one[19]=20; wheel_one[20]=21;
+    wheel_one[21]=22; wheel_one[22]=23; wheel_one[23]=24; wheel_one[24]=25; wheel_one[25]=26;
+    wheel_one[26]=1; // Every position on the wheel is accounted for. This map represents the cross
+                     // wiring of the configurable enigma wheels. 
+
+    map<int, int> reflector; // Reflector wheel sends signal to the current number plus 13 modulo 26
+    reflector[1]=14; reflector[2]=15; reflector[3]=16; reflector[4]=17; reflector[5]=18;
+    reflector[6]=19; reflector[7]=20; reflector[8]=21; reflector[9]=22; reflector[10]=23;
+    reflector[11]=24; reflector[12]=25; reflector[13]=26; reflector[14]=1; reflector[15]=2;
+    reflector[16]=3; reflector[17]=4; reflector[18]=5; reflector[19]=6; reflector[20]=7;
+    reflector[21]=8; reflector[22]=9; reflector[23]=10; reflector[24]=11; reflector[25]=12;
+    reflector[26]=13;
+
+    // The wheels are only to be hardcoded for the proof of concept. Generator functions will be 
+    // created for the configurable wheels, and the static wheels may be generated more
+    // elegantly using a for loop.
 
 
 }
