@@ -42,5 +42,5 @@ char encrypt_single_character (char input, int first_wheel_setting = 1) {
     // created for the configurable wheels, and the static wheels may be generated more
     // elegantly using a for loop.
 
-
+    // The actual algorithmic section should be started just below this comment.
 }
