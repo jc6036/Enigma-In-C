@@ -1,7 +1,7 @@
 #ifndef ENIGMA_H_
 #define ENIMGA_H_
 
-char encrypt_single_character (char input, int first_wheel_setting); // Single character encryption through enigma.
+char encrypt_single_character (char input, int first_wheel_setting=1); // Single character encryption through enigma.
 
 
 

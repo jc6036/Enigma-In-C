@@ -21,7 +21,7 @@ char encrypt_single_character (char input, int first_wheel_setting = 1) {
     letter_wheel[25]='y'; letter_wheel[26]='z'; // This populates the letter-wheel map.
 
     map<int, int> wheel_one; // Basic wheel setup; after POC this will be far more complex.
-    wheel_one[0]=1; // Key 0 will contain the current setting for the wheel.
+    wheel_one[0]=first_wheel_setting; // Key 0 will contain the current setting for the wheel.
     wheel_one[1]=2; wheel_one[2]=3; wheel_one[3]=4; wheel_one[4]=5; wheel_one[5]=6; 
     wheel_one[6]=7; wheel_one[7]=8; wheel_one[8]=9; wheel_one[9]=10; wheel_one[10]=11;
     wheel_one[11]=12; wheel_one[12]=13; wheel_one[13]=14; wheel_one[14]=15; wheel_one[15]=16;
@@ -43,4 +43,22 @@ char encrypt_single_character (char input, int first_wheel_setting = 1) {
     // elegantly using a for loop.
 
     // The actual algorithmic section should be started just below this comment.
+    int map_follower;
+    int next_contact;
+    char output_char;
+    for (map_follower = 1; map_follower <= 26; map_follower++) {
+        if (input == letter_wheel[map_follower]) { // Loop through and figure out which contact to
+            next_contact = map_follower;           // start on based on user input.
+            break;
+        }
+        else {
+            continue;
+        }
+    }
+
+    next_contact = wheel_one[next_contact]; // Row of statements represents the way the contacts work
+    next_contact = reflector[next_contact]; // on the enigma for a single pass. This may be done more
+    next_contact = wheel_one[next_contact]; // elegently in future functions.
+    output_char = letter_wheel[next_contact];
+    return output_char;
 }

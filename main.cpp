@@ -7,7 +7,6 @@ using namespace std;
 
 int main ()
 {
-
-    test_single_char_retrieval();
+    test_single_char_encoding();
     return 1;
 }
