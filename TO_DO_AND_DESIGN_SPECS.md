@@ -18,13 +18,28 @@ The output system will simply display the converted letter during the proof-of-c
 
 ## TO-DO
 
-- [ ] Work on the proof of concept, getting a baseline functionality working.
+- [x] Work on the proof of concept, getting a baseline functionality working.
    - [x] Create an input system that will take one letter of user input and store it in a variable
-   - [ ] Create a system with a static wheel, one middle wheel, and a reflector. Their       configuration will be hardcoded into the program for the prototype.
-   - [ ] Allow for the system to output the newly encoded letter.
-   - [ ] Translate a few letters on paper to compare to test runs of the prototype.
+   - [x] Create a system with a static wheel, one middle wheel, and a reflector. Their       configuration will be hardcoded into the program for the prototype.
+   - [x] Allow for the system to output the newly encoded letter.
+   - [x] Translate a few letters on paper to compare to test runs of the prototype.
 - [x] Plan on how the file setup of the program will be. Individual classes per file and main.cpp as the backbone in a single file. 
 - [x] Create a basic Makefile
    - [x] Include make Clean option (This will remove all compiled objects)
    - [x] Include make All option (This will re-compile all files instead of changed ones)
+#### Baseline Functionality is Finished
+
+
+- [ ] Make the software actually useable. Allow the user to enter multiple letters in one running of the program.
+   - [ ] Set up a loop in main.cpp that continues until the user types exit as their input.
+   - [ ] Code a real enigma algorithm with three wheels. Input includes 3 maps for the function.
+   - [ ] Set up the new enigma algorithm so that the wheels will turn over as in the actual machine, and the user may keep entering single letters and getting the true output. This will be the next step in the functionality of the software, and will evolve into encoding blocks of letters with no spaces.
+   - [ ] Set up the loop in main so that the user enters the wheel config at the start of running.
+   - [ ] Set up three static wheelmaps hardcoded into input.cpp for testing purposes. Extended functionality will include a wheelmap generator that may be ran by the user.
+   - [ ] Format the output of the encoded letters in a way that is readily and easily readable from the command line.
+
+
+
+
+
 
