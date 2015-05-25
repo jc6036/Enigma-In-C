@@ -38,6 +38,13 @@ The output system will simply display the converted letter during the proof-of-c
    - [ ] Set up three static wheelmaps hardcoded into input.cpp for testing purposes. Extended functionality will include a wheelmap generator that may be ran by the user.
    - [ ] Format the output of the encoded letters in a way that is readily and easily readable from the command line.
 
+- [ ] Set up basic error checking in the form of verifying that user inputs are valid.
+   - [ ] Set up error.h and error.cpp that will contain functions for validating user inputs.
+   - [ ] Make sure arrays entered into encryption functions are numbers 1-26 ONLY, no duplicates.
+   - [ ] Make sure the user enters only one character, and only letter characters. If the user enters 'exit', the program will not throw an error but will exit.
+
+- [ ] After input validation is handled, set up exceptions that will continue running the program and reset variables to the state they were before the user entered invalid input. This will be necessary in the case of things such as the current position of the middle wheels of the enigma, as they roll over each time a user enters input. Another option is to set things up so that input is validated before anything happens or anything changes.
+
 
 
 
