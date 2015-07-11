@@ -45,6 +45,10 @@ The output system will simply display the converted letter during the proof-of-c
 
 - [ ] After input validation is handled, set up exceptions that will continue running the program and reset variables to the state they were before the user entered invalid input. This will be necessary in the case of things such as the current position of the middle wheels of the enigma, as they roll over each time a user enters input. Another option is to set things up so that input is validated before anything happens or anything changes.
 
+- [ ] Set up a more elegant way of creating the pairmaps instead of the method I currently have in place. Randomly generated pairmaps
+with checking to make sure they're valid would be great, as a validity-checking function can be used elsewhere.
+
+- [ ] Encaspulate the code by forming your individual files in classes, I think. Could be added later on when it would actually make sense to do so.
 
 
 
